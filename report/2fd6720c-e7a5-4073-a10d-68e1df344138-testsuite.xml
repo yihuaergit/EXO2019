@@ -1,0 +1,101 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1562665181371" stop="1562665181416">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1562665181371" status="passed" stop="1562665181373">
+      <name>Test.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="11576-MainThread"/>
+        <label name="host" value="LAPTOP-UH6FVHBP"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1562665181373" status="passed" stop="1562665181373">
+          <name>正在执行登录的操作</name>
+          <title>正在执行登录的操作</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1562665181374" status="passed" stop="1562665181375">
+      <name>Test.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="11576-MainThread"/>
+        <label name="host" value="LAPTOP-UH6FVHBP"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1562665181374" status="passed" stop="1562665181374">
+          <name>正在执行退出的操作</name>
+          <title>正在执行退出的操作</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1562665181375" status="passed" stop="1562665181376">
+      <name>Test.test003</name>
+      <attachments>
+        <attachment source="f90118d7-8086-4f8e-8459-43bb5c4a9de3-attachment.txt" title="描述：" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="11576-MainThread"/>
+        <label name="host" value="LAPTOP-UH6FVHBP"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562665181378" status="failed" stop="1562665181412">
+      <name>Test.test004</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test01.Test object at 0x05F200F0&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    def test004(self):
+        #添加描述
+        allure.attach("描述：","")
+        print("test004被执行")
+        # 模拟失败，目的：查看
+&gt;       assert 0
+E       assert 0
+
+scripts\test01.py:25: AssertionError</stack-trace>
+      </failure>
+      <attachments>
+        <attachment source="573e8ae9-66d7-4fad-9f26-ae15639d35a8-attachment.txt" title="描述：" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="11576-MainThread"/>
+        <label name="host" value="LAPTOP-UH6FVHBP"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1562665181415" status="passed" stop="1562665181416">
+      <name>Test.test005</name>
+      <attachments>
+        <attachment source="a5e941ce-ab74-4e3b-8878-c73464e0d69a-attachment.png" title="失败原因：" type="image/png"/>
+      </attachments>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="11576-MainThread"/>
+        <label name="host" value="LAPTOP-UH6FVHBP"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
